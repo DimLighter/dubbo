@@ -3,6 +3,8 @@ package com.hhg.jerry.service.impl;
 import com.hhg.jerry.UserService;
 import com.hhg.jerry.model.User;
 
+import java.util.Date;
+
 /**
  * Created by lining on 2018/10/25.
  */
@@ -12,6 +14,7 @@ public class UserServiceImpl implements UserService {
         u.setId(-1L);
         u.setName("dummy");
         u.setAge(Integer.MAX_VALUE);
+        u.setBirthday(new Date());
         return u;
     }
 }

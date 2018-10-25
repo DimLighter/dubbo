@@ -1,11 +1,12 @@
 package com.hhg.jerry.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by lining on 2018/10/25.
  */
-public class User {
+public class User implements Serializable{
     private Long id;
     private String name;
     private Integer age;
@@ -41,5 +42,15 @@ public class User {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", birthday=" + birthday +
+                '}';
     }
 }
