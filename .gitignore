@@ -1,5 +1,4 @@
 *.iml
-/target/*
-/target/
+*/target/
 *.hprof
 *.idea
